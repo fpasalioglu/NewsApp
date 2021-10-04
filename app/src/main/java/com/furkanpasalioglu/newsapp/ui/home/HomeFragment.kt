@@ -83,6 +83,7 @@ class HomeFragment : Fragment() {
                     initState()
                 }
 
+                searchView.clearFocus()
                 return false
             }
 
