@@ -4,9 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/furka/AndroidStudioProjects/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/furka/AndroidStudioProjects/NewsApp2/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.3828125" />
+        <entry key="..\:/Users/furka/AndroidStudioProjects/NewsApp2/app/src/main/res/layout/activity_detay.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/furka/AndroidStudioProjects/NewsApp2/app/src/main/res/layout/activity_main.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/furka/AndroidStudioProjects/NewsApp2/app/src/main/res/layout/activity_web_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/furka/AndroidStudioProjects/NewsApp2/app/src/main/res/layout/detay_fragment.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/furka/AndroidStudioProjects/NewsApp2/app/src/main/res/layout/fragment_home.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/furka/AndroidStudioProjects/NewsApp2/app/src/main/res/layout/item_news.xml" value="0.21" />
+        <entry key="..\:/Users/furka/AndroidStudioProjects/NewsApp2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/furka/AndroidStudioProjects/NewsApp2/app/src/main/res/menu/main_menu.xml" value="0.27291666666666664" />
       </map>
     </option>

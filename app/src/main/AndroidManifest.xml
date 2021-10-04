@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsApp">
         <activity
+            android:name=".ui.web.WebViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.detay.DetayActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">

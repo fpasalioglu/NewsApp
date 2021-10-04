@@ -1,7 +1,7 @@
 package com.furkanpasalioglu.newsapp.ui.home
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
@@ -13,6 +13,7 @@ import com.furkanpasalioglu.newsapp.adapter.NewsListAdapter
 import com.furkanpasalioglu.newsapp.databinding.FragmentHomeBinding
 import com.furkanpasalioglu.newsapp.di.NetworkModule.query
 import com.furkanpasalioglu.newsapp.enums.State
+import com.furkanpasalioglu.newsapp.ui.detay.DetayActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -63,8 +64,10 @@ class HomeFragment : Fragment() {
     }
 
     private fun onListItemClick(position: Int) {
-        //liste elemanına tiklaninca gerceklesir
-        //todo
+        val intent = Intent(context, DetayActivity::class.java).apply {
+            putExtra("article", homeViewModel.newsList.value?.get(position))
+        }
+        startActivity(intent)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
