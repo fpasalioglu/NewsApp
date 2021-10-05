@@ -78,6 +78,16 @@ class DetayActivity : AppCompatActivity() {
                 }
                 true
             }
+
+            R.id.action_share -> {
+                val share = Intent(Intent.ACTION_SEND)
+                share.type = "text/plain"
+                share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET)
+                share.putExtra(Intent.EXTRA_SUBJECT, article.title)
+                share.putExtra(Intent.EXTRA_TEXT, article.title + " haberinin linki: \n" + article.url)
+                startActivity(Intent.createChooser(share, "Haberi Paylaş"))
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
