@@ -1,8 +1,8 @@
 package com.furkanpasalioglu.newsapp.database.dao
 
 import androidx.lifecycle.LiveData
+import androidx.paging.DataSource
 import androidx.room.Dao
-import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import com.furkanpasalioglu.newsapp.models.Article
@@ -12,6 +12,9 @@ interface ArticlesDao {
 
     @Query("SELECT * FROM articles")
     fun getAllNews(): LiveData<List<Article>>
+
+    @Query("SELECT * FROM articles")
+    fun getAllNewsPaging(): DataSource.Factory<Int, Article>
 
     @Query("SELECT * FROM articles WHERE title == :title")
     fun getNews(title: String): Boolean

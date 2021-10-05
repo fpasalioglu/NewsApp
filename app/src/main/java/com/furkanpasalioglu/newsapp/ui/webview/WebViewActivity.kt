@@ -1,4 +1,4 @@
-package com.furkanpasalioglu.newsapp.ui.web
+package com.furkanpasalioglu.newsapp.ui.webview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

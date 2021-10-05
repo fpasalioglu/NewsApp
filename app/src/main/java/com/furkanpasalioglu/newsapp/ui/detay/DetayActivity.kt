@@ -10,7 +10,7 @@ import com.furkanpasalioglu.newsapp.database.RoomDb
 import com.furkanpasalioglu.newsapp.database.dao.ArticlesDao
 import com.furkanpasalioglu.newsapp.databinding.ActivityDetayBinding
 import com.furkanpasalioglu.newsapp.models.Article
-import com.furkanpasalioglu.newsapp.ui.web.WebViewActivity
+import com.furkanpasalioglu.newsapp.ui.webview.WebViewActivity
 import com.squareup.picasso.Picasso
 
 import androidx.core.content.ContextCompat

@@ -47,13 +47,13 @@ class HomeFragment : Fragment() {
         homeViewModel.getState().observe(this, { state ->
             if (homeViewModel.listIsEmpty() && state == State.LOADING){
                 binding.progressBar.visibility = View.VISIBLE
-                binding.txtInfo.visibility = View.GONE
+                binding.aramayapLayout.visibility = View.GONE
             } else
                 binding.progressBar.visibility = View.GONE
 
             if (homeViewModel.listIsEmpty() && state == State.ERROR) {
                 binding.txtError.visibility = View.VISIBLE
-                binding.txtInfo.visibility = View.GONE
+                binding.aramayapLayout.visibility = View.GONE
             } else
                 binding.txtError.visibility = View.GONE
 

@@ -1,6 +1,5 @@
 package com.furkanpasalioglu.newsapp.models
 
-
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -15,7 +14,7 @@ data class Article(
 
     @ColumnInfo(name = "author")
     @SerializedName("author")
-    val author: String,
+    val author: String?,
 
     @ColumnInfo(name = "content")
     @SerializedName("content")
