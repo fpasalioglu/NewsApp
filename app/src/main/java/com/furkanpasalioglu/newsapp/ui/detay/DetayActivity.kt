@@ -56,7 +56,7 @@ class DetayActivity : AppCompatActivity() {
 
     override fun onPrepareOptionsMenu(menu: Menu): Boolean {
         if (articlesDao.getNews(article.title))
-            menu.getItem(0).icon = ContextCompat.getDrawable( this, R.drawable.ic_baseline_favorite_24)
+            menu.getItem(1).icon = ContextCompat.getDrawable( this, R.drawable.ic_baseline_favorite_24)
         return super.onPrepareOptionsMenu(menu)
     }
 

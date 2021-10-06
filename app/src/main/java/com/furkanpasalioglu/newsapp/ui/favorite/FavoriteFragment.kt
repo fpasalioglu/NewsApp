@@ -2,7 +2,6 @@ package com.furkanpasalioglu.newsapp.ui.favorite
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +10,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.furkanpasalioglu.newsapp.adapter.FavoriteListAdapter
-import com.furkanpasalioglu.newsapp.databinding.FragmentDashboardBinding
+import com.furkanpasalioglu.newsapp.databinding.FragmentFavoriteBinding
 import com.furkanpasalioglu.newsapp.ui.detay.DetayActivity
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -20,12 +19,12 @@ class FavoriteFragment : Fragment() {
 
     private val dashboardViewModel by activityViewModels<FavoriteViewModel>()
 
-    private var _binding: FragmentDashboardBinding? = null
+    private var _binding: FragmentFavoriteBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View {
-        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+        _binding = FragmentFavoriteBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val adapter = FavoriteListAdapter{ position -> onListItemClick(position) }

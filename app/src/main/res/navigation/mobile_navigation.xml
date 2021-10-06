@@ -15,6 +15,6 @@
         android:id="@+id/navigation_dashboard"
         android:name="com.furkanpasalioglu.newsapp.ui.favorite.FavoriteFragment"
         android:label="@string/title_favorites"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_favorite" />
 
 </navigation>
